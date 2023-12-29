@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samplegallery</title>
+    <style>
+         body{ background-image: url("business3.jpg"); background-size: cover; background-repeat: no-repeat;
+     backdrop-filter: 10px; background-position: center;background-attachment: fixed;
+     padding: 5px; margin: 10px; height: 100vh;justify-content: center; display: block;
+       align-items: center; margin-top: 0;margin-bottom: 0; margin-left: 0; margin-right: 0; }
+    .navbar ul{ list-style-type: none; background-color: rgb(255, 255, 255); background-image: url(business1.jpg);
+            margin: 0px; padding: 5px; overflow: hidden;} 
+            .navbar a{color: rgb(232, 225, 233); text-decoration: 
+             none;padding: 15px; display:
+                 block; text-align: center; 
+            }
+          
+                
+            .navbar a:hover{ color: rgb(255, 255, 255); background-color: rgb(30, 62, 77)}
+            .navbar li{ float: left;
+            }
+           
+        *{box-sizing:border-box;padding: 0; margin: 0;}
+
+        
+          .slide-frame{ overflow: hidden; width: 60%; position: relative;
+        }
+        .slide-images{ display: flex; width: 100%;
+            
+        }
+        .slide-images img{ height: 400px; width:100%; transition:all 0.15s ease;}
+        .slide-images input{ display: none;}
+        .dots{ display: flex; justify-content: center; margin: 5px;}
+        .dots label{height: 20px; width: 20px; border-radius: 50%; border: solid #fff 3px;
+        cursor: pointer; transition: all 0.15s ease; margin: 5px;}
+        .dots label:hover{ background: #fff; } 
+        #img1:checked~.m1{ margin-left: 0;}
+        #img2:checked~.m2{ margin-left: -30%;}
+        #img3:checked~.m3{ margin-left: -100%;}
+        #img4:checked~.m4{ margin-left: -200%;}
+        #img5:checked~.m5{ margin-left: -200;}
+        #img6:checked~.m6{ margin-left: -100;}
+        #img7:checked~.m7{ margin-left: -250%;}
+        #img8:checked~.m8{ margin-left: -100%;}
+        #img9:checked~.m9{ margin-left: -400%;}
+        #img10:checked~.m10{ margin-left: -200;}
+        #img11:checked~.m11{ margin-left: -300%;}
+        
+  
+        @media screen and (max-width:600px) { aside, section{width: 100%;}
+            }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar"> <ul>
+  <li><a href="services.html">Sample Gallery</a></li>
+            </ul>
+        </nav>
+    </header><br><BR>
+    <main>
+       <diV class="slide-frame">
+        <div class="slide-images">
+            <input type="radio" name="slide" id="img1" checked>
+            <input type="radio" name="slide" id="img2">
+            <input type="radio" name="slide" id="img3">
+            <input type="radio" name="slide" id="img4">
+            <input type="radio" name="slide" id="img7">
+           
+            <input type="radio" name="slide" id="img9">
+        
+           
+           <img src="flysad copy.jpg" class="m1" alt="img1">
+              <img src="grap1.png" class="m2" alt="img2">
+             <img src="burg.jpg" class="m3" alt="img3">
+             <img src="BURG2.jpg" class="m4" alt="img4">  
+             <img src="graph2.png" class="m5" alt="img5">
+             <img src="logo1.png" class="m6" alt="img6">
+             <img src="graph3.png" class="m7" alt="img7">
+             <img src="abbashouse.jpg" class="m8" alt="img8">
+             <img src="logo2.png" class="m9" alt="img9">
+             <img src="logo4.png" class="m10" alt="img10">
+             <img src="logo3.png" class="m11" alt="img11"></div>
+             <div class="dots">
+<label for="img1"></label>
+<label for="img2"></label>
+<label for="img3"></label>
+<label for="img4"></label>
+<label for="img7"></label>
+<label for="img9"></label>
+
+
+             </div>
+       </diV>
+    </main>
+</body>
+</html>
